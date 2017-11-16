@@ -17,6 +17,8 @@ RUN apk add -U --no-cache \
         apache-ant \
         zip \
         php7-xdebug@edge-community\
+        php7-amqp@edge-community \
+
 
     && rm -rf /var/cache/apk/* \
 
