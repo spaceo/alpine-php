@@ -20,6 +20,9 @@ RUN apk add -U --no-cache \
         php7-amqp@edge-community \
         php7-phar \
         php7 \
+        php7-amqp@edge-community \
+        php7-cli@edge-community \
+
 
 
 
