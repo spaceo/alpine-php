@@ -40,4 +40,8 @@ RUN HOST_IP="$(/sbin/ip route|awk '/default/ { print $3 }')" \
 
 CMD ["supervisord", "--nodaemon", "--configuration", "/etc/supervisor/conf.d/supervisord.conf"]
 
+ONBUILD RUN set -xe \
+    && curl -sS https://getcomposer.org/installer | php \
+    && mv composer.phar /usr/local/bin/composer \
+
 EXPOSE 22 9000
