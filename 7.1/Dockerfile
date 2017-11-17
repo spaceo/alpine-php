@@ -41,6 +41,8 @@ RUN echo "@edge-main http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk
     php7-fpm@edge-community \
     php7-tokenizer@edge-community \
     php7-amqp@edge-community \
+    php7-cli@edge-community \
+
 
 
     && rm -rf /var/cache/apk/*
